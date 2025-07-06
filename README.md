@@ -24,6 +24,44 @@ https://github.com/your-username/DSA-Problem-Solving.git
 git clone https://github.com/shivam8103/DSA-Problem-Solving.git
 cd DSA-Problem-Solving
 ```
+## ✅ CHECK REMOTE CONFIGURATION
+
+Use this to check where your local Git repository is connected (i.e., the remote URLs for fetch and push):
+
+```bash
+git remote -v
+```
+
+This confirms:
+
+-  The **remote GitHub URL** your repository is connected to
+-  That both **fetch** (getting updates) and **push** (sending changes) are properly set up
+
+### 🔍 Example Output:
+```bash
+origin  https://github.com/shivam8103/DSA-Problem-Solving.git (fetch)
+origin  https://github.com/shivam8103/DSA-Problem-Solving.git (push)
+```
+
+If the remote is incorrect or needs to be updated, use the following command:
+
+```bash
+git remote set-url origin https://github.com/your-username/your-repo-name.git
+```
+---
+## 📌 RECOMMENDED WORKFLOW SUMMARY
+
+```bash
+git status
+git add .
+git commit -m "Your message"
+git push
+```
+
+**Always pull before starting work:**
+```bash
+git pull
+```
 
 ---
 ## 📊 Step 1. CHECK STATUS
@@ -75,21 +113,7 @@ git push
 ```
 
 ---
-## 📌 RECOMMENDED WORKFLOW SUMMARY
 
-```bash
-git status
-git add .
-git commit -m "Your message"
-git push
-```
-
-**Always pull before starting work:**
-```bash
-git pull
-```
-
----
 ## 🔍 BONUS: CHECK USER CONFIG
 
 If you're seeing the wrong GitHub account name or email in the commit history, or if a commit made by you is not appearing under your GitHub account, here's what to do:
@@ -109,31 +133,7 @@ git config --global user.email "shivam.sinha0810@gmail.com"
 ---
 
 
-## ✅ BONUS: CHECK REMOTE CONFIGURATION
 
-Use this to check where your local Git repository is connected (i.e., the remote URLs for fetch and push):
-
-```bash
-git remote -v
-```
-
-This confirms:
-
-- ✅ The **remote GitHub URL** your repository is connected to
-- ✅ That both **fetch** (getting updates) and **push** (sending changes) are properly set up
-
-### 🔍 Example Output:
-```bash
-origin  https://github.com/shivam8103/DSA-Problem-Solving.git (fetch)
-origin  https://github.com/shivam8103/DSA-Problem-Solving.git (push)
-```
-
-If the remote is incorrect or needs to be updated, use the following command:
-
-```bash
-git remote set-url origin https://github.com/your-username/your-repo-name.git
-```
----
 
 ## 🧠 TIPS
 
