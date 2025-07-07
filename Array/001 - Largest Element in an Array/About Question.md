@@ -1,9 +1,6 @@
-# Find the Largest Element in an Array
-
-## Problem Statement
-Given an array, we have to find the largest element in the array.
-
-## Examples
+# Problem Statement : Given an array, we have to find the largest element in the array.
+<details>
+<summary>Examples</summary>
 
 ### Example 1:
 - **Input:** `arr[] = {2, 5, 1, 3, 0}`
@@ -14,3 +11,5 @@ Given an array, we have to find the largest element in the array.
 - **Input:** `arr[] = {8, 10, 5, 7, 9}`
 - **Output:** `10`
 - **Explanation:** 10 is the largest element in the array.
+
+</details>
