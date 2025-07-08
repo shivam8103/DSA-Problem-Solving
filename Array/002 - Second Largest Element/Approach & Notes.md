@@ -18,8 +18,8 @@
 <details>
 <summary>Improved Two-Pass Approach</summary>
 
-- **Pass 1:** Traverse the array to find the **largest element**.
-- **Pass 2:** Traverse the array again to find the **largest element smaller than the max**.
+- **Pass 1:** Traverse the array to find the lar = **largest than arr[i]**.
+- **Pass 2:** Traverse the array again to find the slar = **largest than arr[i] but smaller than max(lar)**.
 - If no such element exists, return `-1`.
 
 ### ⏱ Time Complexity:
