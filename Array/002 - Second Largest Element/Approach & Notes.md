@@ -11,7 +11,7 @@
 
 </details>
 
----
+
 
 ## 🥈 Approach 2:
 
@@ -27,7 +27,7 @@
 
 </details>
 
----
+
 
 ## 🥉 Approach 3:
 
