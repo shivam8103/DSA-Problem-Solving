@@ -27,7 +27,6 @@ public class Improved {
         int arr[] = { 8, 8, 7, 6, 5 };
         // int arr[] = {6,7,7,7,7 };
         // int arr[] = { 7, 7, 7, 7, 7 };
-
         System.out.println(secondLargest(arr));
     }
 }

@@ -11,7 +11,6 @@ public class Optimized {
             else if (arr[i] < lar & arr[i] > slar) {
                 slar = arr[i];
             }
-
         }
         return slar;
     }
