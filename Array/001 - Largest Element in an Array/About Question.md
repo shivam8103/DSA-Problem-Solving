@@ -12,4 +12,5 @@
 - **Output:** `10`
 - **Explanation:** 10 is the largest element in the array.
 
+
 </details>

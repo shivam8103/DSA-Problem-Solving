@@ -12,6 +12,7 @@
 
 ---
 
+
 ## 🥈 Approach 2: 
 <details> 
 <summary>Optimal Solution</summary>

@@ -13,6 +13,7 @@ public class Optimal {
     public static void main(String[] args) {
         int arr[] = { 3, 1, 4, 5, 0, 2 };
         int largest = largestFun(arr);
+        
         System.out.println("Largest element in the array is: " + largest);
     }
 }
