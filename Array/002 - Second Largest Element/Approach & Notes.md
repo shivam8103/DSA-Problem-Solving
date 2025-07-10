@@ -9,6 +9,7 @@
 ### ⏱ Time Complexity:
 > **O(n log n + n)** – Sorting takes `O(n log n)` and scanning for duplicate largest element `O(n)`.
 
+
 </details>
 
 ## 🥈 Approach 2:

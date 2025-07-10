@@ -6,6 +6,7 @@ Given an array of positive integers `arr[]` of size `n`, the task is to find the
 
 ---
 
+
 </details>
 <details>
 <summary>Examples</summary>
