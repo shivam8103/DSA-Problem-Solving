@@ -7,8 +7,7 @@ public class Code {
             }
         }
 
-        return true;
-           
+        return true;  
     }
 
     public static void main(String args[]) {

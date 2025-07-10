@@ -7,6 +7,7 @@ Given an array of size `n`, the task is to **check if it is sorted in ascending 
 ---
 
 </details>
+
 <details>
 <summary>Examples</summary>
 
