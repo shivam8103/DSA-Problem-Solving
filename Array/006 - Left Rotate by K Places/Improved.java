@@ -30,4 +30,4 @@ public class Improved {
 
 
 //TC = O(N)
-//SC = O(N)
+//SC = O(K)
