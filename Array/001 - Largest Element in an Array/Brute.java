@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Brute {
+public class Brute{
 
     public static int largestFun(int[] arr) {
         Arrays.sort(arr);
