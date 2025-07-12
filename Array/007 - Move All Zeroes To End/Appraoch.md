@@ -1,22 +1,48 @@
-# Appraoch
+# Approach
 
 ## Brute Force
 <details>
-<summary>click</summary>
-- Create a temporary array `temp[]` of same size of the original array. By default all elements in java is initialized by 0 if not initialized.
+<summary>Click to Expand</summary>
 
-- Copy all the non zero elements of original array to  `temp[]` from the beginning.
+- Create a temporary array `temp[]` of the same size as the original array.  
+  (In Java, elements are initialized to `0` by default.)
 
-- Now, the temp[] have some zeroes at the last which was not disturbed. This temp[] becuase the resultant array as all the zeroes are placed in last ane non zeres at beginning.
+- Traverse the original array and copy all **non-zero** elements into `temp[]`, starting from index `0`.
 
-- Copy `arr[i] = temp[i]`
+- The remaining positions in `temp[]` will stay as `0`, effectively placing all zeros at the end.
+
+- Finally, copy all elements from `temp[]` back into the original array.
+
+---
 
 ### ⏱ Time Complexity:
-> **O(n + n)**
+> **O(n + n)** = **O(2n)** → **O(n)**
 
 ### 💾 Space Complexity:
 > **O(n)** – Extra array `temp[]` is used.
 
 </details>
 
+---
+
 ## Optimal Solution
+<details>
+<summary>Click to Expand</summary>
+
+- Find the index of the **first zero** in the array and store it in variable `j`.
+
+- From index `j + 1` onward:
+  - If a **non-zero** element is found at index `i`, **swap** it with the element at index `j`.
+  - Increment `j` to point to the next zero location.
+
+- This ensures all non-zero elements are pushed forward while zeros shift to the end — in-place and efficiently.
+
+---
+
+### ⏱ Time Complexity:
+> **O(n)** – One pass to find the first `0`, another to perform swaps.
+
+### 💾 Space Complexity:
+> **O(1)** – In-place swaps, no extra space used.
+
+</details>
