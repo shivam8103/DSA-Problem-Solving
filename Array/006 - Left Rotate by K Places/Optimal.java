@@ -1,4 +1,4 @@
-public class Optimized {
+public class Optimal {
     public static void reverse(int arr[], int a, int b){
         while(a<b){
             int temp = arr[b];

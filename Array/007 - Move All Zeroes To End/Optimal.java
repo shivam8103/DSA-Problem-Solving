@@ -1,4 +1,4 @@
-public class Optimized {
+public class Optimal {
 
     public static void swap(int arr[], int a, int b){
         int temp = arr[a];

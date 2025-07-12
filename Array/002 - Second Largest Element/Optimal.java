@@ -1,4 +1,4 @@
-public class Optimized {
+public class Optimal {
     public static int secondLargest(int[] arr) {
         int slar = -1;
         int lar = -1;
