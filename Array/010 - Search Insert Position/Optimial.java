@@ -29,3 +29,5 @@ public class Optimial {
     }
     
 }
+
+//TC: O(logn)

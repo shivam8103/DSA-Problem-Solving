@@ -18,3 +18,5 @@ public class Brute {
         System.out.println(searchInsertPosition(arr, target));
     }
 }
+
+// TC : O(n)
