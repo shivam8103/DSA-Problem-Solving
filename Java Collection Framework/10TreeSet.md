@@ -1,4 +1,4 @@
-## 🌳 Java TreeSet
+# Java TreeSet
 
 A `TreeSet` is a collection that stores **unique elements** in **sorted order**.
 
@@ -53,7 +53,7 @@ set.clear();
 ```java
 int count = set.size();  //only counts unique element
 ```
---=
+---
 
 
 ## 🔁 HashSet vs TreeSet
