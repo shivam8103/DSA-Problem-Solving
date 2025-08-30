@@ -54,11 +54,19 @@ for(k=i -> j+1){
 |------------|----|----|----|----|----|-----|
 | Prefix Sum | 10 | 17 | 22 | 24 | 25 | 15  |
 
-If we get the prefix sum = k and the length (j-i+1) is greater than max length, then update the max length
+If we get the prefix sum = k and the CurrentLength (i+1) is greater than maxLength, then update the max length = i+1
 
 2. Store the prefix sum in hashmap (key=prefixSum, value=index)
-- If currentSum - hash(Key) = key, and currentLength > maxLength. Update the maxLength = (i-hash(value)+1)
+- If currentSum - hash(Key) = k(our target), and currentLength > maxLength. Update the maxLength = (i-hash(value))
 
+| HashKey | -> | HashValue |
+|---------|----|-----------|
+|  10     | -> | 10        |
+| 7       | -> | 17        |
+| 5       | -> | 22        |
+| 2       | -> | 24        |
+| 1       | -> | 25        |
+| -10     | -> | 15        |
 
 ### > Time Complexity = `O(n)`
 ### > Space Complexity = `O(n)` - hashmap
