@@ -61,12 +61,12 @@ If we get the prefix sum = k and the CurrentLength (i+1) is greater than maxLeng
 
 | HashKey | -> | HashValue |
 |---------|----|-----------|
-|  10     | -> | 10        |
-| 7       | -> | 17        |
-| 5       | -> | 22        |
-| 2       | -> | 24        |
-| 1       | -> | 25        |
-| -10     | -> | 15        |
+| 10      | -> | 0         |
+| 17      | -> | 1         |
+| 22      | -> | 2         |
+| 24      | -> | 3         |
+| 25      | -> | 4         |
+| 15      | -> | 5         |
 
 ### > Time Complexity = `O(n)`
 ### > Space Complexity = `O(n)` - hashmap
