@@ -1,30 +1,31 @@
+import java.util.*;
+
 public class Optimal {
-    public static int longestSubArray(int[] arr, int key) {
-        int left = 0;
-        int right = 0;
-        int sum = arr[0];
-        int maxLength = 0;
+    public static int longestSubarray(int[] arr, int k) {
+        Map<Integer, Integer> map = new HashMap<>();
+        int PS = 0, maxLen = 0;
 
-        while(right<arr.length){
+        for (int i = 0; i < arr.length; i++) {
+            PS = PS + arr[i];
 
-            while(sum>key){
-                sum = sum - arr[right];
-                right++;
-            }
-            right ++;
-            if(rightsum = sum + arr[right]{
-                
+            if (PS == k) {
+                maxLen = i + 1;
             }
 
+            if (map.containsKey(PS - k)) {
+                maxLen = Math.max(maxLen, i - map.get(PS - k));
+            }
+
+            if (!map.containsKey(PS)) {
+                map.put(PS, i);
+            }
         }
-        return maxLength;
+        return maxLen;
     }
 
     public static void main(String[] args) {
-        int arr[] = { 10, 5, 2, 7, 1, 0 };
+        int[] arr = {10,5,2,7,1,-10};
         int k = 15;
-        int x = longestSubArray(arr, k);
-        System.out.println(x);
-
+        System.out.println(longestSubarray(arr, k)); // Output: 6
     }
 }

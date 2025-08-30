@@ -1,29 +1,37 @@
 public class Improved {
-    public static int longestSubArray(int[] arr, int key) {
-        int[] prefixSum = new int[arr.length];
-
-        int sum = 0;
-
-        for(int i = 0; i<arr.length; i++){
-            sum = sum + arr[i];
-            prefixSum[i] = sum;
-        }
-
-        for(int j = 0; j<prefixSum.length; j++){
-            for(int i=0; i<=j; i++){
-                if(prefixSum[j] - prefixSum[i] == key){
-                    return j-i;
+    public static int[] longestSubArray(int[] arr, int key) {
+        int length = 0;
+        int start = 0;
+        int end = 0;
+        for (int i = 0; i < arr.length; i++) {
+            int sum = 0;
+            for (int j = i; j < arr.length; j++) {
+                sum = sum + arr[j];
+                
+                if (sum == key && length < (j - i + 1)) {
+                    length = j - i + 1;
+                    start = i;
+                    end = j + 1;
                 }
             }
         }
-        return 0;
+
+        int[] result = new int[length];
+
+        for (int i = 0; i < result.length; i++) {
+            result[i] = arr[start];
+            start++;
+        }
+        return result;
     }
 
     public static void main(String[] args) {
-        int arr[] = { 10, 5, 2, 7, 1,0};
+        int arr[] = { 10, 5, 2, 7, 1};
         int k = 15;
-        int x = longestSubArray(arr, k);
-        System.out.println(x);
-        
+        int result[] = longestSubArray(arr, k);
+
+        for (int x : result) {
+            System.out.print(x + " ");
+        }
     }
 }

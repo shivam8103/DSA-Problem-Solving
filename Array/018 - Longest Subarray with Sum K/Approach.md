@@ -36,10 +36,30 @@ for(k=i -> j+1){
 ### Space Complexity = `O(1)`
 </details>
 
-## Brute Force 2
+## Improved
 <details>
 
 1. To reduce time complexity, we can calculate sum along with the 2nd loop and not create a 3rd loop for sum calculation.
 ### Time Complexity = `O(n*n)`
 ### Space Complexity = `O(1)`
+</details>
+
+
+## Optimal (using prefix sum and hashmap)
+<details>
+
+1. Use a hashmap to store the prefix sum 
+
+| Array      | 10 | 7  | 5  | 2  | 1  | -10 |
+|------------|----|----|----|----|----|-----|
+| Prefix Sum | 10 | 17 | 22 | 24 | 25 | 15  |
+
+If we get the prefix sum = k and the length (j-i+1) is greater than max length, then update the max length
+
+2. Store the prefix sum in hashmap (key=prefixSum, value=index)
+- If currentSum - hash(Key) = key, and currentLength > maxLength. Update the maxLength = (i-hash(value)+1)
+
+
+### > Time Complexity = `O(n)`
+### > Space Complexity = `O(n)` - hashmap
 </details>
