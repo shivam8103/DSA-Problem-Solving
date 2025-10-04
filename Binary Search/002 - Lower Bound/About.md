@@ -19,7 +19,7 @@ If no such index is found, return the size of the array.
 
 **Output:** `1`
 
-**Explanation:**
+**Explanation:** 
 
 Index `1` is the smallest index such that `arr[1] >= x`.
 

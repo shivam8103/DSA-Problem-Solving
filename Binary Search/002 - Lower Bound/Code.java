@@ -16,7 +16,7 @@ public class Code{
                 start = mid+1;
             }
         }
-        return ans;
+        return ans; 
     }
     public static void main(String[] args) {
         int[] arr1 = {3,5,8,15,19};
